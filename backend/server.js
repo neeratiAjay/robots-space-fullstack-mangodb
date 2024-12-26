@@ -7,6 +7,13 @@ const taskRoutes = require("./routes/tasks")
 const cors = require("cors")
 const app = express()
 app.use(cors())
+/*const corsOptions = {
+    origin: 'http://localhost:3004', // Add your frontend URL here
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};*/
+
+app.use(cors(corsOptions));
 app.use(express.json())
 dotEnv.config()
 mongoose.connect(process.env.MANGO_URI)

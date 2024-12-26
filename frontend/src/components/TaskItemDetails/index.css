@@ -1,0 +1,91 @@
+.task-item{
+   display: flex;
+   flex-direction: column;
+   width:96%;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid #bfbfbf;
+   border-radius: 4px;
+   box-shadow: 2px 2px 2px 2px #bfbfbf;
+}
+.task-item:hover{
+    background-color: #f5f505;
+}
+.items-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item-row-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.task-title{
+    font-size:24px;
+    font-family: "roboto";
+    font-weight:500;
+    color: #000000;
+}
+.edit-btn{
+ height: 25px;
+ margin-right: 10px;
+ border:2px solid #49f349;
+ color: #49f349;
+ text-align: center;
+ font-weight:bold;
+ background-color: transparent;
+ border-radius: 2px;
+ 
+}
+.delete-btn{
+    height: 25px;
+    margin: 10px;
+    border:2px solid #f10b5bfa;
+    color:#f10b5bfa;
+    text-align:center;
+    font-weight:bold;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.description{
+    font-size: 14px;
+    font-weight:400;
+    color: #0f1417;
+}
+.span{
+    margin-left: 5px;
+    color: #010305;
+    font-weight: bold;
+    font-size: 16px;
+}
+@media screen and (min-width:768px){
+    .edit-btn{
+     height: 40px;
+     width: 80px;
+     border-radius: 4px;
+     margin-right: 20px;
+     font-size:18px;
+    }
+    .delete-btn{
+        height: 40px;
+        width: 80px;
+        border-radius: 4px;
+        margin-right: 20px;
+        font-size:18px;
+    }
+    .description{
+        font-size:18px;
+        font-weight:400;
+        color: #0f1417;
+        margin-right: 10px;
+    }
+    .span{
+        margin-left: 5px;
+        color: #010305;
+        font-weight: bold;
+        font-size:19px;
+        margin-left: 10px;
+    }
+}
