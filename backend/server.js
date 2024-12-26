@@ -6,12 +6,12 @@ const taskRoutes = require("./routes/tasks")
 
 const cors = require("cors")
 const app = express()
-app.use(cors())
-/*const corsOptions = {
-    origin: 'http://localhost:3004', // Add your frontend URL here
+
+const corsOptions = {
+    origin: 'https://robots-space-fullstack-mangodb-1.onrender.com', // Add your frontend URL here
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-};*/
+};
 
 app.use(cors(corsOptions));
 app.use(express.json())
